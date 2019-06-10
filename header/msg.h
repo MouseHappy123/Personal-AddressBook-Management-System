@@ -3,6 +3,8 @@
 #include<fstream>
 #include<istream>
 #include<iomanip>
+#include<cstdio>
+#include<cstring>
 using namespace std;
 
 
