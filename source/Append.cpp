@@ -38,8 +38,6 @@ void AddMsg::Append() {
 				cout << "是否修改？（1.是;2.否;）\n";
 				cin >> choice;
 				if (choice == 1) {
-					cout << "请输入修改后的信息，请按姓名 出生日期(按年 月 日输入) 电话 Email 学校名称的顺序输入：\n";
-					cin >> stu1.name >> stu1.year >> stu1.month >> stu1.day >> stu1.telephone >> stu1.Email >> stu1.school;
 					fdat.seekp(-long(sizeof(student)), ios::cur);
 					fdat.write((char*)&stu1, sizeof(student));//写入二进制文件
 					cout << "修改成功！\n";
@@ -111,8 +109,6 @@ void AddMsg::Append() {
 				cout << "是否修改？（1.是;2.否;）\n";
 				cin >> choice;
 				if (choice == 1) {
-					cout << "请输入修改后的信息，请按姓名 出生日期(按年 月 日输入) 电话 Email 单位名称的顺序输入：\n";
-					cin >> col1.name >> col1.year >> col1.month >> col1.day >> col1.telephone >> col1.Email >> col1.unit;
 					fdat.seekp(-long(sizeof(colleague)), ios::cur);
 					fdat.write((char*)&col1, sizeof(colleague));//写入二进制文件
 					cout << "修改成功！\n";
@@ -184,8 +180,6 @@ void AddMsg::Append() {
 				cout << "是否修改？（1.是;2.否;）\n";
 				cin >> choice;
 				if (choice == 1) {
-					cout << "请输入修改后的信息，请按姓名 出生日期(按年 月 日输入) 电话 Email 认识地点的顺序输入：\n";
-					cin >> fri1.name >> fri1.year >> fri1.month >> fri1.day >> fri1.telephone >> fri1.Email >> fri1.site;
 					fdat.seekp(-long(sizeof(friends)), ios::cur);
 					fdat.write((char*)&fri1, sizeof(friends));//写入二进制文件
 					cout << "修改成功！\n";
@@ -256,8 +250,6 @@ void AddMsg::Append() {
 				cout << "是否修改？（1.是;2.否;）\n";
 				cin >> choice;
 				if (choice == 1) {
-					cout << "请输入修改后的信息，请按姓名 出生日期(按年 月 日输入) 电话 Email 称呼的顺序输入：\n";
-					cin >> rel1.name >> rel1.year >> rel1.month >> rel1.day >> rel1.telephone >> rel1.Email >> rel1.call;
 					fdat.seekp(-long(sizeof(relative)), ios::cur);
 					fdat.write((char*)&rel1, sizeof(relative));//写入二进制文件
 					cout << "修改成功！\n";
